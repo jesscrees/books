@@ -14,3 +14,10 @@
   - Find ways to get an activity done more quickly, to increase the impact of an activity, or to shift to activities with higher leverage.
 - Focus your effort on leverage points.
   - Time is your most limited asset. Identify the habits that produce disproportionately high impact for the time you invest.
+
+
+### Chapter 2: Optimise for learning
+(pg.23)
+- Those with growth mindsets are willing to take steps to better themselves, whereas those with fixed mindsets are not.
+
+
