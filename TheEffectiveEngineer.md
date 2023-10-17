@@ -41,3 +41,31 @@
 
 (pg.50)
 - Engineers needs longer and more contiguous blocks of time to be productive than many other professionals.
+
+
+### Chapter 4: Invest in iteration speed
+(pg.73)
+- Find an area where a tool could save time, build it, and demonstrate its value. You'll earn leeway to explore more ambitious avenues, and you'll find the tools you build empowering you to be more effective on future tasks. Don't let the pressure to constantly ship new features cause the important but non-urgent task of building time-saving tools to fall by the wayside.
+
+(pg.75)
+- "Effective engineers have an obsessive ability to create tight feedback loops for what they're testing. They're the people who, if they're dealing with a bug ... have the instinct to spend 20 minutes to wire things up so that they can press a button and get to the exact state they want in the flow every time."
+- The next time you find yourself repeatedly going through the same motions when you're fixing a bug or iterating on a feature, pause. Take a moment to think through whether you might be able to tighten that testing loop. It could save you time in the long run.
+
+(pg.76-77)
+- Get proficient with your favourite text editor or IDE.
+- Each minute spent writing boilerplate code for a less productive language is a minute not spent tackling the meatier aspects of a problem.
+- Learn basic commands like grep, sort, uniq, wc, awk, sed, xargs, and find, all of which piped together to execute arbitrarily powerful transformations.
+- Prefer the keyboard over the mouse.
+
+(pg.78-79)
+- Automate your manual workflows. Developing the skills to automate takes time, whether they be using shell scripts, browser extensions, or something else. But the cost of mastering these skills gets smaller the more often you do it and the better you get at it. As a rule of thumb, once I've manually performed a task three or more times, I start thinking about whether it would be worthwhile to automate it.
+- Make it fast and easy to run just the unit tests associated with your current changes. Use testing tools that run only the subset of tests affected by your code. Even better, integrate the tool with your text editor or IDE so that you can invoke them with a few keystrokes. In general, the faster that you can run your tests, both in terms of how long it takes to invoke the tests and how long they take to run, the more you'll use tests as a normal part of your development - and the more time you'll save.
+- The sooner you acknowledge that you need to personally address the bottleneck, the more likely you'll be able to either adapt your goals or establish consensus on the functionality's priority.
+
+(pg.80-81)
+- Don't wait until after you've invested massive amounts of engineering time to seek final project approval. Prioritise building prototypes, collecting early data, conducting user studies.
+- Explicitly ask the decision makers what they care about the most, so that you can make sure to get those details right.
+- Don't defer approvals until the end.
+- Plan ahead. Expend slightly more effort in coordination; it could make a significant dent in your iteration speed. Get the ball rolling on the requirements in your launch checklist, and don't wait until the last minute to schedule necessary reviews. Again, communication is key to ensure that review processes don't become bottlenecks.
+- "Premature optimisation is the root of all evil."
+- Find out where the biggest bottlenecks in your iteration cycle are, whether they're in the engineering tools, cross-team dependencies, approvals from decision-makers, or organisational processes. Then, work to optimise them.
