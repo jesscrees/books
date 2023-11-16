@@ -215,4 +215,38 @@
 - Overtime, therefore, is not a panacea for poor project planning, and it comes with high long-term risks and costs. Unless there is a realistic plan for actually hitting the launch date by working extra hours, the best strategy in the long run is either to redefine the launch to encompass what the team can deliver by the target date, or to postpone the deadline to something more realistic.
 
 
+### Chapter 8: Balance quality with pragmatism
+(pg.157)
+- ... it's also possible to be overly dogmatic about code reviews, standardisation, and test coverage - to the point where the processes provide diminishing returns on quality and actually reduce your effectiveness.
+- Where is time better spent? On increasing unit test coverage or prototyping more product ideas? On reviewing code or writing more code? Given the benefits of high code quality, finding a pragmatic balance for yourself and for your team can be extremely high-leverage.
 
+(pg.158-159)
+- Catching bugs or design shortcomings early. It takes less time and energy to address problems earlier in the development process; it costs significantly more after they've been deployed to production.
+- Increasing accountability for code changes.
+- Positive modelling of how to write good code. Code reviews provide an avenue for sharing best practices, and engineers can learn from their own code reviews as well as from others. Moreover, engineers pattern-match based on the code that they see. Seeing better code means writing better code.
+- Sharing working knowledge of the codebase. When someone reviews your code, this ensures that at least one other person is familiar with your work and can address high-priority bugs or other issues in your absence.
+- Increasing long-term agility. Higher-quality code is easier to understand, quicker to modify, and less susceptible to bugs. These all translate directly into faster iteration speed for the engineering team.
+- Newly hired engineers may reason incorrectly about code, pattern-match from bad code, or start resolving similar problems in different ways, all because they don't have access to the senior engineers' institutionalised knowledge.
+
+(pg.163)
+- Just as overinvesting in an abstraction can be costly, so too can building a poor abstraction. When we're looking for the right tools for the job and we find it easier to build something freom scratch rather than incorporate an existing abstraction intended for our use case, that's a signal that the abstracton might be ill-designed. Create an abstraction too early, before you have a firm handle on the general problems you're solving, and the resulting design can be overfitted to the available use cases. Other engineers (or even you) might haphazardly bolt on modifications, tip-toe around the shortcomings of the abstraction, or avoid the abstraction entirely because it's too hard to use. Bad abstractions aren't just wasted effort; they're also liabilities that slow down future development.
+
+(pg.164-165)
+- ... simple things take on one role, fulfill one task, accomplish one objective, or deal with one concept. Simple abstractions avoid interweaving multiple concepts, so that you can reason about them independently rather than beiung forced to consider them together. Techniques such as avoiding mutable state, using functional rather than imperative programming, preferring composition over inheritance, and expressing data manipulations declaratively rather than imperatively are just a few examples of how to reduce incidental complexity when building software.
+- Unit test coverage and some degree of integration test coverage provide a scalable way of managing a growing codebase with a large team without constantly breaking the build or the product. In the absence of rigorous automated testing, the time required to thoroughly do manual testing can become prohibitive. Many bugs get detected through production usage and external bug reports. Each major feature release and each refactor of existing code become a risk, resulting in a spike to the error rate that gradually recovers as bugs get reported and fixed.
+
+(pg.166-167)
+- A suite of extensive and automated tests can smooth out the spikes and reduce overall error rates by validating the quality of new code and by safeguarding changes of old code against regressions.
+- ... before modifying a piece of untested code, first add missing tests to ensure that your changes don't cause regressions. Similarly, when fixing a bug, first add a test that the bug breaks. This way, when you get the test to pass, you're more confident that you've actually addressed the bug.
+- Automated testing doesn't just reduce bugs; it provides other benefits as well. The most immediate payoff comes from decreasing repetitive work that we'd otherwise need to do by hand. Rather than manually triggering variations from different code brances, we can programmatically - and quickly - run through large numbers of branches to verify correctness. Moreover, the more closely the tests mirror actual conditions in a production environment and the easier it is for engineers to run those tests, the more likely it is that engineers will incorporate testing into their development workflow to automate checks. This, in turn, leads engineers to be much more accountable for the quality of their own work.
+- Tests also allow engineers to make changes, especially large refactorings, with significantly higher confidence.
+- Automated tests mitigate against a culture in which people are fearful of modifying and improving a piece of code just because it might break. They make it easier to do future code transformations.
+- Without an automated test failure, a problem takes longer to be discovered and often gets misrouted to whoever owns the feature that broke rather than whoever authored the change.
+- Tests offer executable documentation of what cases the original author considered and how to invoke the code.
+- Writing tests is done more easily by the original authors when their code is fresh in their minds, rather than by those who try to modify it months or years later.
+
+(pg.169)
+- Writing the first test is often the hardest. An effective way to initiate the habit of testing, particularly when working with a large codebase with few automated tests, is to focus on high-leverage tests - ones that can can save you a disproportionate amount of time relative to how long they take to write. Once you have a few good tests, testing patterns, and libraries in place, the effort required to write future tests drops. That tips the balance in favour of writing more tests, creating a virtuous feedback cycle and saving more development time. Start with the most valuable tests, and go from there.
+
+(pg.172)
+- Rather than blindly repaying technical debt wherever they find it, effective engineers spend their finite time repaying the debt with the highest leverage - code in highly-trafficked parts of the codebase that takes the least time to fix up. These improvements generate the highest impact for your effort.
