@@ -69,3 +69,56 @@
 - Plan ahead. Expend slightly more effort in coordination; it could make a significant dent in your iteration speed. Get the ball rolling on the requirements in your launch checklist, and don't wait until the last minute to schedule necessary reviews. Again, communication is key to ensure that review processes don't become bottlenecks.
 - "Premature optimisation is the root of all evil."
 - Find out where the biggest bottlenecks in your iteration cycle are, whether they're in the engineering tools, cross-team dependencies, approvals from decision-makers, or organisational processes. Then, work to optimise them.
+
+
+### Chapter 5: Measure what you want to improve
+(pg.86-87)
+- Measuring progress and performance might seem to fall within your manager's purview, but it's actually a powerful tool for assessing your own effectiveness and prioritizing your work. As Peter Drucker points out in 'The Effective Executive', "If you can't measure it, you can't improve it". In product development, it's not uncommone for a manager to conceive of some new feature, for engineers to build and ship it, and for the team to celebrate - all without implementing any mechanism to measure whether the feature actually improved the product experience.
+- Good metrics... help you focus on the right things... confirm that the product changes achieve your objectives.
+- Only way to be consistently confident when answering questions like these is to define a metric associated with your goal.
+- When visualised over time, good metrics help guard against future regressions.
+- Engineers know the value of writing a regression test while fixing bugs: it confirms that a patch actually fixes a bug and detects if the bug resurfaces in the future.
+- Good metrics can drive forward progress.
+- A good metric lets you measure your effectiveness over time and compare the leverage of what you're doing against other activities you could be doing instead.
+
+(pg.88-89)
+- Is there some way to measure the progress of what I'm doing?
+- If a task I'm working on doesn't move a core metric, is it worth doing? Or is there a missing key metric?
+- Ultimately attempting to increase output by increasing hours worked per week is unsustainable. It is much more reasonable to align your metric with productivity per week, where productivity in your focus area is measured by factors like product quality, site speed, or user growth.
+
+(pg.90)
+- Tracking the number of outstanding bugs instead of bugs fixed would have de-incentivized this behaviour [writing sloppy code to have more easy bugs to fix]
+- Measure the fraction of users who are still weekly actives the nth week after signing up, and track how that number changes over time. This metric provides more actionable insight into how product changes have affected the engagement of newer cohorts of users as compared to older ones.
+
+(pg.92-93)
+- When deciding which metrics to use, choose ones that maximise impact, are actionable, and are responsive yet robust.
+- Look for a metric that, when optimised, maximises impact for the team.
+- ...what differentiates great companies from good companies is that they align all employees along a single core metric... the economic denominator. The economic denominator answers the question "If you could pick one and only one ratio - profit per x... - to systematically increase over time, what x would have the greatest and most sustainable impact on your economic engine?" In the context of engineering, the core metric should be the one that, when systematically increased over time, leads you and the rest of your team to make the greatest and most sustainable impact. Having a single, unifying metric ... enables you to compare the output of disparate projects and helps your team decide how to handle externalities.
+- An actionable metric is one whose movements can be causally explained by the team's efforts.
+- Increases in vanity metrics [e.g. page views per month. total registered users, total paying customers] may imply forward product progress, but they don't necessarily reflect the actual quality of the team's work.
+- A responsive metric updates quickly enough to give feedback about whether a given change was positive or negative, so that your team can learn where to apply future efforts. It is a leading indicator of how your team is currently doing.
+- Dedicate the time to pick the right metric, whether it's just for yourself or for your team.
+
+(pg.94)
+- When we don't have visibility into our software, all we can do is guess at what's wrong.
+
+(pg.96)
+- Adopting a mindset of instrumentation means ensuring we have a set of dashboards that surface key health metrics and that enable us to drill down to the relevant data.
+- Therefore we need to build flexible tools and abstractions that make it easy to track additional metrics.
+- Measure anything, measure everything.
+- By graphically correlating these metrics with the times of code deployments, ... able to quickly spot when a certain deployment goes awry.
+- Successful technology companies build the quivalent of a pilot's flight instruments, making it wasy for engineers to measure, monitor, and visualise system behaviour. The more quickly that teams can identify the root cause of certain behaviours, the more rapidly they can address issues and make progress.
+
+(pg.98)
+- ... you don't need accurate numbers to make effective decisions; you just need ones that are in the right ballpark. Ensuring you have access to a few useful numbers to approximate your progress and benchmark your performance is a high-leverage investment: they provide the benefits of metrics at a much lower cost.
+
+(pg.102-103)
+- Using data to support your arguments is powerful. The right metric can slice through office politics, philosophical biases, and product arguments, quickly resolving discussions. Unfortunately, the wrong metric can do the same thing - with disastrous results. And that means we have to be careful how we use data.
+- When it comes to metrics, compare the numbers with your intuition to see if they align. Try to arrive at the same data from a different direction and see if the metrics still make sense. If a metric implies some other property, try to measure the other property to make sure the conclusions are consistent.
+
+(pg.104-105)
+- Log data liberally, in case it turns out to be useful later on.
+- Build tools to iterate on data accuracy sooner.
+- Cross-validate data accuracy by computing the same metric in multiple ways.
+- When a number does look off, dig into it early. Understand what's going on. Figure out whether the discrepancy is due to a bug, a misinterpretation, or something else.
+- Make sure your data is reliable. The only thing worse than having no data is the illusion of having the right data.
