@@ -122,3 +122,32 @@
 - Cross-validate data accuracy by computing the same metric in multiple ways.
 - When a number does look off, dig into it early. Understand what's going on. Figure out whether the discrepancy is due to a bug, a misinterpretation, or something else.
 - Make sure your data is reliable. The only thing worse than having no data is the illusion of having the right data.
+
+
+### Chapter 6: Validate your ideas early and often
+(pg.110-111)
+- Iterative approaches lead to fewer costly errors and give us opportunities between each iteration to collect data and correct our course. The shorter each iteration cycle, the more quickly we can learn from our mistakes. COnversely, the longer the iteration cycle, the more likely it is that incorrect assumptions and errors will compound. These cause us to veer off course and waste our time and effort.
+- The sooner that er gain a better understanding of a risky issue that impedes our progress, the earlier we can either address it to increase our chances of success, or change course to a more promising avenue.
+- "What's the scariest part of this project? That's the part with the most unknowns and the most risk. Do that part first."
+- ...defines the MVP as "that version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort."
+
+(pg.114-115)
+- Before investing time into fixing it [a bug], you can use data from logs to validate whether the bug actually is affecting a sufficient number of users to justify spending your resources.
+- An A/B test doesn't help you decide which variation to launch. Even if you were absolutely convinced that a certain change would improve metrics, an A/B test tells you how much better that variation actually is. Quantifying that improvement informs whether it makes sense to keep investing in the same area.
+
+(pg.118)
+- Initially, it's tricky to determine what's practically significant, but as you run more experiments, you'll be able to prioritise better and determine which tests might give large payoffs.
+
+(pg.121-123)
+- View feedback and criticism not as personal attacks but as opportunities for improvement.
+- Focus on making iterative progress, and use those iterative commits as forcing functions for soliciting feedback. Don't be the person who sends out the ginormous code review.
+- It's better to get harsh feedback from a teammate early on than to get it from users later when something doesn't work.
+- The most direct path to getting feedback is to request it.
+- Research shows that explaining an idea to another person is one of the best ways of learning it yourself; moreover, your explanation might reveal holes in your own understanding.
+- Prepare beforehand. Make sure that you can articulate the problem that you're trying to solve and the approaches that you've already tried. After the discussion, reciprocate with an offer to be a sounding board for their ideas.
+- Design the interface or API of a new system first. After your interface is designed, prototype what the client code would look like if your feature were built. Creating a concrete picture of the interactions will surface poor assumptions of missing requirements, saving you time in the long run.
+- The [design] document doesn't have to be particularly formal - it could just be a detailed email - but it should be comprehensive enough for your reader to understand what you're trying to do and be able to ask clarifying questions.
+- ...structure ongoing projects so that there is some shared context with your teammates. Rather than working on a separate project in parallel with your teammates, consider working together on the same project and tackling the other project together afterwards. Or, consider working in the same focus area as your teammates. This creates a shared context, in turn, reduces the friction in discussions and code reviews. Serialising team projects to increase collaboration rather than doing them independently and in parallel can provide learning benefits as well: each project takes a shorter amount of calendar time to complete, so within a given timeframe, you can be exposed to a larger diversity of project areas.
+- Solicit buy-in for controversial features before investing too much time. This might mean floating the idea in conversations and building a prototype to help convince relevant stakeholders. Sometimes, engineers misconstrue or dismiss this type of selling and marketing as office politics, but it's a fairly logical decision from the viewpoint of leverage.
+- If a conversation to get feedback only takes a few hours but an implementation takes weeks, the shorter path to earlier feedback is extremely valuable. Failing to get buy-in from those who understand the domain might mean you're on the wrong path.
+- ... creating a feedback loop is necessary for all aspects of a job. "It applies to recruiting. It applies to team design. It applies to how you build your culture. It applies to your compensation structure".
