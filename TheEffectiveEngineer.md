@@ -151,3 +151,68 @@
 - Solicit buy-in for controversial features before investing too much time. This might mean floating the idea in conversations and building a prototype to help convince relevant stakeholders. Sometimes, engineers misconstrue or dismiss this type of selling and marketing as office politics, but it's a fairly logical decision from the viewpoint of leverage.
 - If a conversation to get feedback only takes a few hours but an implementation takes weeks, the shorter path to earlier feedback is extremely valuable. Failing to get buy-in from those who understand the domain might mean you're on the wrong path.
 - ... creating a feedback loop is necessary for all aspects of a job. "It applies to recruiting. It applies to team design. It applies to how you build your culture. It applies to your compensation structure"
+
+
+### Chapter 7: Improve your project estimation skills
+(pg.130-131)
+- "A good estimate ... is an estimate that provides a clear enough view of the project reality to allow the project leadership to make good decisions about how to control the project to hit its targets."
+- Given that it's not possible to deliver all features by the arget date, is it more important to hold the date constant and deliver what is possible, or to hold the feature set constant and push back the date until all the features can be delivered?
+- Decompose the project into granular tasks. A long estimate is a hiding place for nasty surprises. Treat it as a warning that you haven't thought the task through thoroughly enough to understand what's involved. The more granular a task's breakdown, the less likely that an unconsidered subtask will sneak up later.
+- Estimate based on how long tasks will take, not on how long you or someone else wants them to take.
+
+(pg.132-133)
+- Think of estimates as probability distributions, not best-case scenarios. Instead of telling a product manager or other stakeholder that we will finish a feature in 6 weeks, we might instead tell them, "There's a 50% likelihood that we can deliver the feature in 4 weeks from now, and a 90% chance that we can deliver it within 8 weeks."
+- As much as possible, have the person who will work on a task do the actual estimation.
+- Divvying up the estimation work also enables more team members to practice estimation skills and builds team-wide visibility into how different members over- or under-estimate their work.
+- Avoid committing to an initial number before actually outlining the tasks involved, as a low estimate can set an initial anchor that makes it hard to establish a more accurate estimate later on.
+- Use multiple approaches to estimate the same task. This can help increase confidence that your approach is sound. e.g. You can decompose the project into granular tasks, estimate each individual task and create a bottom-up estimate; gather historical data on how long it took to build something similar; count the number of subsystems you have to build and estimate the average time required for each one.
+- As additional members join, the communication overhead from meetings, emails, one-on-ones, discussions, etc. grows quadratically with the size of the team. Moreover, new team members require time to ramp up on a project before they're productive, so don't assume that adding more people will shorten a project timeline.
+- Validate estimates against historical data.
+
+(pg.134-135)
+- Use timeboxing to constrain tasks that can grow in scope.
+- Allow others to challenge estimates. Because estimation is hard, we have a tendency to cut corners or eyeball numbers. By reviewing estimates at a team meeting, we can increase accuracy and buy-in at the cost of some additional overhead. Others may have knowledge or experience that can help highlight poor or incomplete estimates.
+- Estimates contain more uncertainty at the beginning of a project, but the variance decreases as we flesh out the details. Use incoming data to revise existing estimates and, in turn, the project plan; otherwise, it will remain based on stale information.
+- Measuring the actual time it takes to perform a task and comparing it against the estimated time helps reduce the error bounds both when we're revising past estimates or making future ones.
+- Discovering that certain tasks take much longer than expected lets us know sooner if we're falling behind. This, in turn, allows us to adjust the schedule or cut lower-priority features sooner. Those adjustments aren't possible if we're not aware how behind we are.
+
+(pg.136)
+- We can better deal with unknowns by acknowledging that the longer a project is, the more likely that an unexpected problem will arise.
+
+(pg.140-141)
+- "Being very, very explicit about what exactly... we were trying to solve helped us to determine what was in scope and what was out of scope."
+- The ... benefit of defining specific project goals is that it builds clarity and alignment across key stakeholders.
+- ...what ensues is a classic tradegy of the commons, where each individual tradeoff is rational but translates into an unacceptable delay in the aggregate. A well-defined scope makes it easier for team members to check on each other and ask "Does what you're doing contribute to the main goal?"
+
+(pg.142-143)
+- "Each milestone was a very clear point where we had introduced some value that we didn't have before," ... In other words, the milestones were measurable; either the system met the criteries and behaved as promised or it didn't.
+- Milestones act as checkpoints for evaluating the progress of a project and as channels for communicating the team's progress to the rest of the organisation. If we've fallen behind, a milestone provides an opportunity to revise our plan, either by extending the deadline or by cutting tasks.
+- Effectively executing on a project means minimising the risk that a deadline might slip and surfacing unexpected issues as early as possible. Others may depend on the initial projected timeline, and the later they discover the slippage, the higher the cost of failure. Therefore, if a problem turns out to be harder than expected, it's better to find out and adjust the target date sooner rather than later.
+- The goal from the beginning should be to maximise learning and minimise risk, so that we can adjust our project plan if necessary.
+- A risk common to all large projects comes during system integration, which almost always takes longer than planned.
+- Code complexity grows as a function of the number of interactions between lines of code more than the actual number of lines
+
+(pg.144-145)
+- Stub out incomplete functions and modules, and assemble an end-to-end system as soon as possible, even if it's only partly functional.
+- It forces you to think more about the necessary glue between different pieces and how they interact, which can help refine the integration estimates and reduce project risk.
+- ...if something breaks the end-to-end system during development, you can identify and fix it along the way, while dealing with much less code complexity, rather than scrambling to tackle it at the end.
+- ... it amortizes the cost of integration throughout the development process, which helps build a stronger awareness of how much integration work is actually left.
+- Our initial project estimates will exhibit high variance because we're operating under uncertainty and imperfect information. As we gain more information and revise our estimates, the variance narrows. By shifting the work that can take highly variable amounts of time to earlier in the process, we reduce risk and give ourselves more time and information to make effective project plans.
+- Rewrite projects are also some of the riskiest projects.
+- "...The general tendency is to overdesign the second system, using all the ideas and frills that were cautiously sidetracked on the first one." We see opportunities for improvement, and in tackling them, we increase the project's complexity. Second systems are particularly susceptible to schedule delays as a result of over-confidence.
+
+(pg.146)
+- ... engineers should use a series of incremental, behaviour-preserving transformations to refactor code. "By doing them in small steps you reduce the risk of introducing errors ... You also avoid having the system broken while you are carrying out the restructuring - which allows you to gradually refactor a system over an extended period of time."
+
+(pg.148-149)
+- Convincing yourself and team members to do a phased rewrite can be diificult. It's discouraging to write code for earlier phases, knowing that you'll soon be throwing the intermediate code away. But it would be even more demoralising to miss the target date by a wide margin, delay the launch of new features, or be forced to build urgent functionality twice. For large rewrite projects, an incremental or phased approach is a much safer bet. It avoids the risks - and associated costs - of slipping and offers valuable flexibility to address new issues that arise.
+- Hourly productivity decreases with additional hours worked.
+- You're probably more behind schedule than you think. The fact that your schedule has slipped means that the work in previous months was under-estimated. This, in turn, likely means that the entire project was under-estimated, including the remaining two months. Moreover, we tend to be much better at estimating the beginnings of projects, where we're working on concrete development tasks that we understand. In contrast, estimating the ends of projects is more difficult; teams often underestimate how long integration takes, and each unexpected issue can throw the schedule off by a week or more.
+
+(pg.150-151)
+- Communication overhead increases as the deadline looms. A frenzy of activity often accompanies the days or weeks leading up to the launch date. The team holds more meetings and shares more frequent status updates to ensure everyone's working on the right things. The additional coordination requirements mean that people have less time to devote to the remaining work.
+- The sprint toward the deadline incentivises technical debt.
+- Overtime, therefore, is not a panacea for poor project planning, and it comes with high long-term risks and costs. Unless there is a realistic plan for actually hitting the launch date by working extra hours, the best strategy in the long run is either to redefine the launch to encompass what the team can deliver by the target date, or to postpone the deadline to something more realistic.
+
+
+
