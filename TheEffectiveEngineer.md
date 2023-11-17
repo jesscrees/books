@@ -308,3 +308,9 @@
   - What if a critical team member gets sick or injured, or leaves? How can we share knowledge so that the team continues to function?
   - What if users revolt over a new and controversial feature? What is our stance and how quickly can we respond?
   - What if a project slips past a promised deadline? How might we predict the slippage early, recover, and respond?
+
+
+### Chapter 10: Invest in your team's growth
+(pg.195)
+- "You're a staff engineer if you're making a whole team better than it would be otherwise. You're a principal engineer if you're making the whole company better than it would be otherwise. And you're distinguished if you're improving the industry." Thinking early in your career about how to help your co-workers succeed instills the right habits that in turn will lead to your own success.
+- ... the secret to your own career success is to "focus primarily on making everyone around you succeed."
